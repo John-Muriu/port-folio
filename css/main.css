@@ -325,7 +325,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
     background: #111;
-    content: "what i provide";
+    content: "what I have done";
 }
 
 .services .serv-content .card {
@@ -364,6 +364,14 @@ section .title::after {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+
+/* resize images */
+
+.services img {
+    width: 30%;
+    height: auto;
 }
 
 
