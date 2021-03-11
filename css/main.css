@@ -210,6 +210,20 @@ section .title::after {
     background-size: cover;
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
+    position: relative;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #222; */
+    z-index: 0;
 }
 
 .home .max-width {
@@ -221,6 +235,7 @@ section .title::after {
 }
 
 .home .home-content .text-2 {
+    /* position: relative; */
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
@@ -310,6 +325,10 @@ section .title::after {
 
 
 /* services section styling */
+
+.services .serv-content {
+    transition: #111 2s ease-out 100ms;
+}
 
 .services,
 .teams {
