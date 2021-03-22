@@ -704,7 +704,7 @@ footer span a:hover {
 
 #error_message {
     margin-bottom: 20px;
-    background: #fe8b8e;
+    background: red;
     padding: 0px;
     text-align: center;
     font-size: 14px;
