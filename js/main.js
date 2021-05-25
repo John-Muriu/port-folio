@@ -36,15 +36,22 @@ $(document).ready(function() {
     });
 
     // typing text animation script
+    // var typed = new Typed(".typing", {
+    //     strings: ["Developer", "Designer", ""],
+    //     typeSpeed: 50,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
+
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Designer", "Freelancer"],
+        strings: [" Web Developer", "Open Source Contributor", "Cloud Computing Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Designer", "Freelancer"],
+        strings: ["Web Developer", "Open Source Contributor", "Freelancer", "AI Enthusiast", "Front End Enthusiast", "UI Designer", "Photographer", "Cloud Computing Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -114,199 +121,3 @@ function validate() {
     alert("Form Submitted Successfully!");
     return true;
 }
-
-
-
-
-
-
-
-//     if (name.length<1){
-//         document.getElementById('field name').innerHTML="Please enter your Name";
-//         status=false;
-//     }else{
-//         document.getElementById('field name').innerHTM="password correct";
-//         status=true;
-// }}
-
-// function validateEmail(){
-//     let x= document.myform.email.value;
-//     let atposition=x.indexOf("@");
-//     var dotposition = x.lastIndexOf(".");
-//     if(atposition <1 || dotposition<atposition +2 || dotposition+2>=x.length){  
-//         alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
-//         return false;
-// }};
-
-
-
-
-// ParticlesJS Config.
-// particlesJS("particles-js", {
-//     "particles": {
-//         "number": {
-//             "value": 80,
-//             "density": {
-//                 "enable": true,
-//                 "value_area": 700
-//             }
-//         },
-//         "color": {
-//             "value": "#ffffff"
-//         },
-//         "shape": {
-//             "type": "circle",
-//             "stroke": {
-//                 "width": 0,
-//                 "color": "#000000"
-//             },
-//             "polygon": {
-//                 "nb_sides": 5
-//             },
-//         },
-//         "opacity": {
-//             "value": 0.5,
-//             "random": false,
-//             "anim": {
-//                 "enable": false,
-//                 "speed": 0.1,
-//                 "opacity_min": 0.1,
-//                 "sync": false
-//             }
-//         },
-//         "size": {
-//             "value": 3,
-//             "random": true,
-//             "anim": {
-//                 "enable": false,
-//                 "speed": 10,
-//                 "size_min": 0.1,
-//                 "sync": false
-//             }
-//         },
-//         "line_linked": {
-//             "enable": true,
-//             "distance": 150,
-//             "color": "#ffffff",
-//             "opacity": 0.4,
-//             "width": 1
-//         },
-//         "move": {
-//             "enable": true,
-//             "speed": 2,
-//             "direction": "none",
-//             "random": false,
-//             "straight": false,
-//             "out_mode": "out",
-//             "bounce": false,
-//             "attract": {
-//                 "enable": false,
-//                 "rotateX": 600,
-//                 "rotateY": 1200
-//             }
-//         }
-//     },
-//     "interactivity": {
-//         "detect_on": "canvas",
-//         "events": {
-//             "onhover": {
-//                 "enable": true,
-//                 "mode": "grab"
-//             },
-//             "onclick": {
-//                 "enable": true,
-//                 "mode": "push"
-//             },
-//             "resize": true
-//         },
-//         "modes": {
-//             "grab": {
-//                 "distance": 140,
-//                 "line_linked": {
-//                     "opacity": 1
-//                 }
-//             },
-//             "bubble": {
-//                 "distance": 400,
-//                 "size": 40,
-//                 "duration": 2,
-//                 "opacity": 8,
-//                 "speed": 3
-//             },
-//             "repulse": {
-//                 "distance": 200,
-//                 "duration": 0.4
-//             },
-//             "push": {
-//                 "particles_nb": 4
-//             },
-//             "remove": {
-//                 "particles_nb": 2
-//             }
-//         }
-//     },
-//     "retina_detect": true
-// });
-
-tsParticles
-    .loadJSON("tsparticles", "presets/default.json")
-    .then((container) => {
-        console.log("callback - tsparticles config loaded");
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-
-//or
-
-/* tsParticles.load(@dom-id, @options); */
-
-tsParticles.load("tsparticles", {
-    /* options here */
-});
-
-//or
-
-/* tsParticles.loadFromArray(@dom-id, @options, @index (optional)); */
-
-tsParticles.loadFromArray("tsparticles", [{
-        /* options here */
-    },
-    {
-        /* other options here */
-    },
-]);
-//random object
-
-tsParticles.loadFromArray(
-    "tsparticles", [{
-            /* options here */
-        },
-        {
-            /* other options here */
-        },
-    ],
-    1
-); //the second one
-// Important! If the index is not in range 0...<array.length, the index will be ignored.
-
-// after initialization this can be used.
-
-/* tsParticles.setOnClickHandler(@callback); */
-
-/* this will be fired from all particles loaded */
-
-tsParticles.setOnClickHandler((event, particles) => {
-    /* custom on click handler */
-});
-
-// now you can control the animations too, it's possible to pause and resume the animations
-// these methods don't change the config so you're safe with all your configurations
-// domItem(0) returns the first tsParticles instance loaded in the dom
-const particles = tsParticles.domItem(0);
-
-// play will start the animations, if the move is not enabled it won't enable it, it just updates the frame
-particles.play();
-
-// pause will stop the animations
-particles.pause();
