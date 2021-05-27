@@ -17,7 +17,9 @@ $(document).ready(function() {
 
     // slide-up script
     $('.scroll-up-btn').click(function() {
-        $('html').animate({ scrollTop: 0 });
+        $('html').animate({
+            scrollTop: 0
+        });
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
@@ -34,15 +36,22 @@ $(document).ready(function() {
     });
 
     // typing text animation script
+    // var typed = new Typed(".typing", {
+    //     strings: ["Developer", "Designer", ""],
+    //     typeSpeed: 50,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
+
     var typed = new Typed(".typing", {
-        strings: ["Web Developer", "Mentor", "Open Source Contributor", "Action on Google Developer", "Freelancer", "AI Enthusiast", "Front End Enthusiast", "UI Designer", "Photographer", "Technical Writer", "Author", "Cloud Computing Enthusiast"],
+        strings: [" Web Developer", "Open Source Contributor", "Cloud Computing Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Web Developer", "Mentor", "Open Source Contributor", "Action on Google Developer", "Freelancer", "AI Enthusiast", "Front End Enthusiast", "UI Designer", "Photographer", "Technical Writer", "Author", "Cloud Computing Enthusiast"],
+        strings: ["Web Developer", "Open Source Contributor", "Freelancer", "AI Enthusiast", "Front End Enthusiast", "UI Designer", "Photographer", "Cloud Computing Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -70,3 +79,51 @@ $(document).ready(function() {
         }
     });
 });
+
+
+
+
+
+
+
+// function validate() {
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let subject = document.getElementById("subject").value;
+//     // let phone= document.getElementById("phone").value;
+//     // let message= document.getElementById("message").value;
+
+
+//     let error_message = document.getElementById("error_message");
+
+//     error_message.style.padding = "10px";
+
+//     let text;
+//     if (name.length < 1) {
+//         text = "Please Enter valid Name";
+//         error_message.innerHTML = text;
+//         return false;
+//     }
+//     if (subject.length < 10) {
+//         text = "Please Enter Correct Subject";
+//         error_message.innerHTML = text;
+//         return false;
+//     }
+//     // if(isNaN(phone) || phone.length != 10){
+//     //   text = "Please Enter valid Phone Number";
+//     //   error_message.innerHTML = text;
+//     //   return false;
+//     // }
+//     if (email.indexOf("@") == -1 || email.length < 6) {
+//         text = "Please Enter valid Email";
+//         error_message.innerHTML = text;
+//         return false;
+//     }
+//     // if(message.length <= 140){
+//     //   text = "Please Enter More Than 140 Characters";
+//     //   error_message.innerHTML = text;
+//     //   return false;
+//     // }
+//     alert("Form Submitted Successfully!");
+//     return true;
+// }

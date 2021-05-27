@@ -187,7 +187,38 @@
     .scroll-up-btn:hover {
         filter: brightness(90%);
     }
-    /* home section styling */
+    
+    home section styling #front {
+        background: rgba(0, 0, 0, 0.5);
+        min-height: 100vh;
+        padding-top: 15vh;
+    }
+    
+    #front h1 {
+        font-size: 29.7px;
+        display: inline-block;
+        -webkit-transform: scale(1.9, 1.7);
+        /* Safari and Chrome */
+        -moz-transform: scale(1.9, 1.7);
+        /* Firefox */
+        -ms-transform: scale(1.9, 1.7);
+        /* IE 9 */
+        -o-transform: scale(1.9, 1.7);
+        /* Opera */
+        transform: scale(1.9, 1.7);
+        /* W3C */
+        line-height: 1.7;
+    }
+    
+    #front p {
+        font-size: 21.19px;
+        margin-bottom: 21px;
+    }
+    
+    @import url("https://fonts.googleapis.com/css?family=Federo|Redressed");
+    #front span {
+        font-size: 50.1px;
+    }
     
     .home {
         display: flex;
@@ -211,7 +242,7 @@
     /* 
 z-index: -2; */
     
-    */ .home .max-width {
+    .home .max-width {
         margin: auto 0 auto 30px;
     }
     
@@ -225,21 +256,23 @@ z-index: -2; */
     .home .home-content .text-1 {
         font-size: 20px;
         color: #f59e0b;
+        font-family: 'Redressed', cursive';
+
     }
     
-    .home .home-content .text-2 {
+    .home .home-content .text-1 h1 {
         /* position: relative; */
         font-size: 75px;
-        font-weight: 600;
-        color: #f59e0b;
-        margin-left: -3px;
+        font-weight: 40;
+        color: inherit;
+        justify-content: center;
     }
-    
+    /* 
     .home .home-content .text-3 {
         font-size: 20px;
         margin: 5px 0;
         color: #f59e0b;
-    }
+    } */
     
     .home .home-content .text-3 span {
         color: #f59e0b;
@@ -248,7 +281,7 @@ z-index: -2; */
     
     .home .home-content a {
         display: inline-block;
-        background: #0B486B;
+        /* background: #0B486B; */
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #F56217, #0B486B);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -271,17 +304,20 @@ z-index: -2; */
     /* about section styling */
     
     .about {
-        background: #141E30;
+        /* background: #fff; */
+        color: white;
+        background: radial-gradient(circle, #1687a7, white);
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);
+        /* background: -webkit-linear-gradient(to right, #243B55, #141E30); */
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30);
+        /* background: linear-gradient(to right, #243B55, #141E30); */
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
         */
     }
     
     .about .title::after {
         content: "who i am";
+        color: #1687a7;
     }
     
     .about .about-content .left {
@@ -301,9 +337,12 @@ z-index: -2; */
     }
     
     .about .about-content .right .text {
-        font-size: 25px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 100;
         margin-bottom: 10px;
+        font-style: normal;
+        letter-spacing: 0.195em;
+        line-height: 1.7;
     }
     
     .about .about-content .right .text span {
@@ -316,7 +355,7 @@ z-index: -2; */
     
     .about .about-content .right a {
         display: inline-block;
-        background: #1687a7;
+        /* background: #1687a7; */
         color: #fff;
         font-size: 20px;
         font-weight: 500;
@@ -328,7 +367,7 @@ z-index: -2; */
     }
     
     .about .about-content .right a:hover {
-        color: #1687a7;
+        color: #000;
         background: none;
     }
     /* services section styling */
